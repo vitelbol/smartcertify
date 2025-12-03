@@ -1,0 +1,57 @@
+/* Fondo de la barra de navegación y color del texto */
+.navbar {
+    background-color: #f8f9fa;
+    /* Fondo claro para la barra de navegación. */
+}
+
+/* Estilo de marca de la barra de navegación */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Estilo de enlaces de la barra de navegación */
+.nav-link {
+    font-size: 1rem;
+    color: #343a40;
+    margin-right: 15px;
+}
+
+/* Estilo de enlace activo */
+.nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Estilo del cuadro de búsqueda */
+.form-control {
+    width: 250px;
+}
+
+/* Estilo del botón de registro */
+.btn-primary {
+    margin-left: 15px;
+}
+
+/* Ajustes receptivos */
+@media (max-width: 992px) {
+.form-control {
+    width: 150px;
+}
+}
+
+.active {
+    font-weight: bold;
+    color: #bed1f0;
+    /* Cambie este color según sea necesario */
+}
+
+.navbar-nav .nav-link {
+    cursor:pointer;
+/* Cambiar el cursor a puntero al pasar el cursor */
+}
+
+.navbar-nav .nav-link:hover {
+    text-decoration: underline;
+/* Opcional: agregar subrayado al pasar el mouse */
+}
