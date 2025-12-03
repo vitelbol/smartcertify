@@ -1,69 +1,74 @@
-<nav>
-    <div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
         <!--Logo-->
-        <a href="">SmartCertify</a>
+        <a class="navbar-brand" href="#">SmartCertify</a>
         <!--Boton para diseño responsivo-->
-        <button>
-            <span></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <!--Links del navbar-->
-        <div>
-            <ul>
+        <div class="collapse navbar-collapse" id="navbarNav"> 
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <!--Inicio-->
-                <li>
-                    <a href="">Inicio</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Inicio</a>
                 </li>
-                <li>
-                    <a href="">Examenes de usuario</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Examenes de usuario</a>
                 </li>
-                <li>
-                    <a href="">Cursos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Cursos</a>
                 </li>
-                <li>
-                    <a href="">Videos</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Videos</a>
                 </li>
                 <!--Actualizar perfil-->
-                <li>
-                    <a href="">Actualizar perfil</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Actualizar perfil</a>
                 </li>
                 <!--Ejemplo de dropdown-->
-                <li><a href="">Conceptos</a>
-                    <ul>
-                        <li><a href="">Enlace de datos</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="coursesDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Conceptos</a>
+                    <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                        <li><a class="dropdown-item">Enlace de datos</a></li>
                     </ul>
                 </li>
 
-                <li>
-                    <a href="">Ver preguntas</a>
+                <li class="nav-item">
+                    <a class="nav-link">Ver preguntas</a>
                 </li>
-                <li>
-                    <a href="">Crear preguntas</a>
+                <li class="nav-item">
+                    <a class="nav-link">Crear preguntas</a>
                 </li>
                 <!--Acerca de y contactos-->
-                <li>
-                    <a href="">Acerca de</a>
+                <li class="nav-item">
+                    <a class="nav-link">Acerca de</a>
                 </li>
-                <li>
-                    <a href="">Contactanos</a>
+                <li class="nav-item">
+                    <a class="nav-link">Contactanos</a>
                 </li>
             </ul>
 
             <!--Caja de busqueda-->
-            <form action="">
-                <input type="search" placeholder="Buscar cursos">
-                <button type="submit">Buscar</button>
+            <form class="d-flex me-3">
+                <input class="form-control me-2" type="search" placeholder="Buscar cursos" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
 
             <!--Iniciar Sesion/Cerrar Sesion-->
-            <ul>
-                <li>
+            <ul class="navbar-nav">
+                <li class="nav-item d-flex align-items-center">
                     <!--Foto de perfil-->
-
+                    <img  alt="Foto de perfil"
+                        class="rounded-circle"
+                        style="width: 40px; height: 40px; object-fit: cover; cursor: pointer;" />
                     <!--Avatar predeterminado-->
-
-                    <a href="">Iniciar Sesion</a>
-                    <a href="">Cerrar Sesion</a>
+                    <a href=""><i class="fa fa-user nav-link"></i></a>
+                    <a class="nav-link" href="">Iniciar Sesion</a>
+                    <a class="nav-link" href="">Cerrar Sesion</a>
                 </li>
             </ul>
         </div>

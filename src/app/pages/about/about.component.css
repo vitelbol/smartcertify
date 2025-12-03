@@ -10,16 +10,16 @@
     text-align: center;
     color: #e2e2e2;
 }
-.mision-section, .vision-section, .history-section{
+.mission-section, .vision-section, .history-section{
     margin-top: 40px;
 }
-.mision-section h3, .vision-section h3, .history-section h3{
+.mission-section h3, .vision-section h3, .history-section h3{
     font-size: 2rem;
     margin-bottom: 20px;
     color: #f1c40f;
 }
 
-.mision-section p, .vision-section p , .history-section p{
+.mission-section p, .vision-section p , .history-section p{
     font-size: 1.1rem;
     line-height: 1.6;
 }
