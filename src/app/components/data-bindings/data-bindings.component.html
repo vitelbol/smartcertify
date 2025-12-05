@@ -1,0 +1,46 @@
+<div class="container mt-4">
+    <!--Interpolacion y vinculacion de propiedades-->
+    <h1>Bienvenido {{appName}}</h1>
+    <img [src]="logoUrl" alt="App logo" class="app-logo" [title]="appDescription">
+    <!--Enlace bidireccional-->
+    <div class="mt-3">
+        <label for="username">Ingresa tu nombre</label>
+        <input id="username" [(ngModel)] ="username" placeholder="Ingresa tu nombre" class="form-control" >
+        <p *ngIf="username">Hola, {{username}}</p>
+    </div>
+    <!-- *ngIf, *ngElse-->
+    <div class="mt-3">
+        <button class="btn btn-primary" (click)="toggleWelcome()">Cambiar mensaje de bienvenida</button>
+        <ng-container *ngIf="isWelcomeVisible; else noWelcome">
+            <p class="text-success mt-2">Bienvenido a nuestra aplicacion Angular</p>
+        </ng-container>
+        <ng-template #noWelcome>
+            <p class="text-danger mt-2">El mensaje de bienvenida esta oculto</p>
+        </ng-template>
+    </div>
+    
+    <!--*ngFor-->
+    <div class="mt-3">
+        <h2>Tecnologias que utilizamos:</h2>
+        <ul class="list-group">
+            <li *ngFor="let tech of technologies" class="list-group-item">
+                {{tech}}
+            </li>
+        </ul>
+    </div>
+    <!--Vinculacion de eventos-->
+    <div class="mt-3">
+        <button class="btn btn-success" (click)="incrementCounter()">Click aqui</button>
+        <p>Hiciste click en el boton {{clickCounter}} veces</p>
+    </div>
+    <!--Directivas de atributos: ngClass y ngStyle-->
+    <div class="mt-3">
+        <h2 [ngClass]="getClass()" [ngStyle]="getStyle()">
+            Ejemplo de estilo dinamico
+        </h2>
+        <button class="btn btn-warning" (click)="toggleHighlight()">Alternar resultado</button>
+    </div>
+</div>
+<div class="container">
+    <app-data-bindings-latest></app-data-bindings-latest>
+</div>
